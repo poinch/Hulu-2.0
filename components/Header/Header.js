@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import logo from '../public/hulu-white.png'
+import logo from '../../public/hulu-white.png'
 import {
   BadgeCheckIcon,
   CollectionIcon,
@@ -8,12 +8,12 @@ import {
   SearchIcon,
   UserIcon,
 } from '@heroicons/react/outline'
-import HeaderItem from './HeaderItem';
+import HeaderItem from '../Header/HeaderItem';
 
 function Header() {
   return (
     <header className='flex flex-col sm:flex-row m-5 justify-between items-center h-auto'>
-      <div className='flex flex-grow justify-evenly mt-3 max-w-2xl'>
+      <div className='flex flex-grow justify-evenly mt-3 max-w-2xl order-last sm:order-first'>
         <HeaderItem title='HOME' Icon={HomeIcon} />
         <HeaderItem title='TRENDING' Icon={LightningBoltIcon} />
         <HeaderItem title='VERIFIED' Icon={BadgeCheckIcon} />
